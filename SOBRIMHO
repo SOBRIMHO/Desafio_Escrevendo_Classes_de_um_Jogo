@@ -1,0 +1,30 @@
+class heroi{
+	constructor(nomeDoHeroi,idadeDoHeroi,tipoDoHeroi){
+    	this.nomeDoHeroi = nomeDoHeroi
+        this.idadeDoHeroi = idadeDoHeroi
+        this.tipoDoHeroi = tipoDoHeroi
+    }
+    
+    atacar(){
+    if(this.tipoDoHeroi === "Guerreiro"){
+    	console.log(`"o ${this.tipoDoHeroi} atacou usando espada"`)
+    }else if(this.tipoDoHeroi === "Mago"){
+    	console.log(`"o ${this.tipoDoHeroi} atacou usando magia"`)
+    }else if(this.tipoDoHeroi === "Monge"){
+    	console.log(`"o ${this.tipoDoHeroi} atacou usando artes marciais"`)
+    }else{ (this.tipoDoHeroi === "Ninja")
+    	console.log(`"o ${this.tipoDoHeroi} atacou usando shuriken"`)
+    }
+}
+	status(){
+		console.log(this.nomeDoHeroi)
+        console.log(this.idadeDoHeroi)
+        console.log(this.tipoDoHeroi)
+}
+
+}
+
+let herois = new heroi("MC Bola de Fogo" , "20 anos", "Mago")
+
+herois.status()
+herois.atacar()
